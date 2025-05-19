@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en-ZA">
+
+  <head>
+    <!-- Basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Site Metas -->
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>(MOCK) St. Joseph's R.C School</title>
+    <link href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.js"></script>
+    <!--owl slider stylesheet -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+
+    <!-- bootstrap core css -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <!-- fonts awesome style -->
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <!-- fonts style -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:400,500,700&amp;display=swap" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet">
+    <!-- responsive style -->
+    <link href="css/responsive.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <!-- header section starts -->
+
+        <div class="container-fluid">
+          <nav class="navbar navbar-expand-lg custom_nav-container">
+            <div class="custom_menu-btn">
+              <button onclick="openNav()">
+                <span class="s-1"> </span>
+                <span class="s-2"> </span>
+                <span class="s-3"> </span>
+              </button>
+            </div>
+            <div id="myNav" class="overlay">
+              <div class="menu_btn-style ">
+                <button onclick="closeNav()">
+                  <span class="s-1"> </span>
+                  <span class="s-2"> </span>
+                  <span class="s-3"> </span>
+                </button>
+              </div>
+              <div class="overlay-content">
+                <a class="" href="index.html"> <i class="fa fa-angle-right" aria-hidden="true"></i> Home </a>
+                <a class="active" href="#"> <i class="fa fa-angle-right" aria-hidden="true"></i> School Calendar </a>
+                <a class="" href="our_school.html"> <i class="fa fa-angle-right" aria-hidden="true"></i> Our School </a>
+                <a class="" href="extra-mural.html"> <i class="fa fa-angle-right" aria-hidden="true"></i> Extra Mural </a>
+                <a class="" href="about History.html"> <i class="fa fa-angle-right" aria-hidden="true"></i> Abous Us</a>
+                <a class="" href="photo-gallery.html"> <i class="fa fa-angle-right" aria-hidden="true"></i>Photo Gallery </a>
+                <a class="" href="parent-resources.html"> <i class="fa fa-angle-right" aria-hidden="true"></i>Parent Resources </a>
+                <a class="" href="team.html"> <i class="fa fa-angle-right" aria-hidden="true"></i> Our Team</a>
+                <a class="" href="contact.html"> <i class="fa fa-angle-right" aria-hidden="true"></i> Contact Us</a>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </header>
+
+    <!-- end header section -->
+ 
+
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 2rem;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    .calendar-section {
+      margin-bottom: 3rem;
+    }
+    .calendar-title {
+      font-size: 2rem;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 2rem;
+      color: white;
+      background: linear-gradient(135deg, #2a4f84, #4e78a0);
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    }
+    #calendar {
+      max-width: 1000px;
+      margin: 0 auto;
+      background: white;
+      padding: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background-color: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+    th, td {
+      padding: 0.75rem 1rem;
+      text-align: left;
+      border-bottom: 1px solid #eee;
+    }
+    th {
+      background-color: #2a4f84;
+      color: white;
+    }
+    tr:hover {
+      background-color: #f1f1f1;
+    }
+    tbody tr:nth-child(even) {
+      background-color: #f7faff;
+    }
+    .holiday-table-title {
+      text-align: center;
+      font-size: 1.75rem;
+      margin-top: 4rem;
+      margin-bottom: 1.5rem;
+      color: #2a4f84;
+    }
+  </style>
+</head>
+<body>
+
+  <section class="calendar-section">
+    <div class="calendar-title">📅 School Calendar</div>
+    <div id="calendar"></div>
+  </section>
+
+  <section>
+    <div class="holiday-table-title">Public Holidays - 2025</div>
+    <table>
+      <thead>
+        <tr>
+          <th>Date</th>
+          <th>Holiday Name</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>🎉 01 January</td><td>New Year’s Day</td></tr>
+        <tr><td>🕊️ 21 March</td><td>Human Rights Day</td></tr>
+        <tr><td>✝️ 29 March</td><td>Good Friday</td></tr>
+        <tr><td>👨‍👩‍👧‍👦 01 April</td><td>Family Day</td></tr>
+        <tr><td>🗽 27 April</td><td>Freedom Day</td></tr>
+        <tr><td>🔧 01 May</td><td>Workers’ Day</td></tr>
+        <tr><td>👦 16 June</td><td>Youth Day</td></tr>
+        <tr><td>👩 09 August</td><td>National Women’s Day</td></tr>
+        <tr><td>🎭 24 September</td><td>Heritage Day</td></tr>
+        <tr><td>✌️ 16 December</td><td>Day of Reconciliation</td></tr>
+        <tr><td>🎄 25 December</td><td>Christmas Day</td></tr>
+        <tr><td>🎁 26 December</td><td>Day of Goodwill</td></tr>
+      </tbody>
+    </table>
+  </section>
+  <!-- Nav-bottom section -->
+
+<section class="info_section layout_padding2">
+  <div class="container">
+      <div class="col-md-4">
+        <div class="info_link_box">
+          <h5>
+            Navigation
+          </h5>
+          <div class="info_links">
+            <a class="" href="index.html"> <i class="fa fa-angle-right" aria-hidden="true"></i> Home </a>
+            <a class="active" href="#"> <i class="fa fa-angle-right" aria-hidden="true"></i> School Calendar </a>
+            <a class="" href="our_school.html"> <i class="fa fa-angle-right" aria-hidden="true"></i> Our School </a>
+            <a class="" href="extra-mural.html"> <i class="fa fa-angle-right" aria-hidden="true"></i> Extra Mural </a>
+            <a class="" href="about History.html"> <i class="fa fa-angle-right" aria-hidden="true"></i> About Us</a>
+            <a class="" href="photo-gallery.html"> <i class="fa fa-angle-right" aria-hidden="true"></i>Photo Gallery </a>
+            <a class="" href="parent-resources.html"> <i class="fa fa-angle-right" aria-hidden="true"></i>Parent Resources </a>
+            <a class="" href="team.html"> <i class="fa fa-angle-right" aria-hidden="true"></i> Our Team</a>
+            <a class="" href="contact.html"> <i class="fa fa-angle-right" aria-hidden="true"></i> Contact Us</a>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+
+<!-- end Nav-bottom section -->
+<!-- footer section -->
+<footer class="footer_section container-fluid">
+  <p>
+    St Joseph’s R.C. School&copy; <span id="displayYear"></span> All Rights Reserved. <br> 
+    <a href="https://OmniGenix.co.za"> Design by: OmniGenix&copy;</a>
+  </p>
+</footer>
+<!-- footer section -->
+
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script src="js/custom.js"></script>
+<script>
+  function openNav() {
+    document.getElementById("myNav").style.width = "100%";
+  }
+
+  function closeNav() {
+    document.getElementById("myNav").style.width = "0";
+  }
+</script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var calendarEl = document.getElementById('calendar');
+      var calendar = new FullCalendar.Calendar(calendarEl, {
+        initialView: 'dayGridMonth',
+        height: '700px',
+        events: [
+          { title: 'First Day of Term', date: '2025-01-15', color: '#4caf50' },
+          { title: 'Sports Day', date: '2025-03-10', color: '#2196f3' },
+          { title: 'Parent-Teacher Meeting', date: '2025-04-05', color: '#ff9800' },
+          { title: 'Mid-Term Break', start: '2025-06-24', end: '2025-06-28', color: '#f44336' },
+        ]
+      });
+      calendar.render();
+    });
+  </script>
+</body>
+
+</html>

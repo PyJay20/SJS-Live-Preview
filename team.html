@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Extra-Mural Activities Carousel</title>
+<style>
+  html, body {
+    overflow-x: hidden;   /* prevent horizontal scrollbar */
+    overflow-y: hidden;   /* prevent vertical scrollbar */
+    width: 100vw;
+    height: 100%;
+    margin: 0; padding: 0;
+    background: #010101;
+    color: #eee;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .carousel-wrapper {
+    width: 100vw;
+    overflow-x: hidden;     /* hide horizontal scrollbar */
+    display: flex;
+    justify-content: center; /* center horizontally */
+  }
+
+  .carousel-container {
+    perspective: 1200px;
+    width: 90vw;
+    max-width: 500px;
+    height: 360px;
+    margin-top: 180px;
+    position: relative;
+    overflow: visible;      /* allow 3D images to show outside container */
+  }
+
+  .gallery {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform-style: preserve-3d;
+    transition: transform 1s ease;
+  }
+
+  .gallery span {
+    position: absolute;
+    width: 220px;
+    height: 220px;
+    transform-style: preserve-3d;
+    transform: rotateY(calc(var(--i) * 45deg)) translateZ(600px);
+    transition: transform 0.5s ease;
+    cursor: default;
+    left: calc(50% - 110px);
+  }
+
+  .gallery span img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(130,196,25,0.7);
+    background: #1b1b1b;
+    padding: 18px;
+  }
+
+  .name-tag {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #82c419;
+    color: #010101;
+    font-weight: 700;
+    border-radius: 9999px;
+    padding: 6px 20px;
+    font-size: 15px;
+    box-shadow: 0 2px 6px rgba(0 0 0 / 0.5);
+    user-select: none;
+    white-space: nowrap;
+  }
+
+  .controls {
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 24px;
+    background: #111;
+    padding: 12px 36px;
+    border-radius: 30px;
+    box-shadow: 0 0 18px rgba(130,196,25,0.85);
+    user-select: none;
+    z-index: 1000;
+  }
+
+  button {
+    background: linear-gradient(to right, #82c419, #a3dc3e);
+    border: none;
+    color: #010101;
+    font-weight: 700;
+    font-size: 18px;
+    padding: 12px 36px;
+    border-radius: 18px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0 0 0 / 0.45);
+    transition: background 0.3s ease;
+  }
+
+  button:hover {
+    background: linear-gradient(to right, #a3dc3e, #82c419);
+  }
+
+  /* Responsive tweaks */
+  @media (max-width: 480px) {
+    .carousel-container {
+      height: 320px;
+      margin-top: 150px;
+    }
+    .gallery span {
+      width: 180px;
+      height: 180px;
+      left: calc(50% - 90px);
+      transform: rotateY(calc(var(--i) * 45deg)) translateZ(450px);
+    }
+    .name-tag {
+      font-size: 13px;
+      padding: 5px 16px;
+    }
+    button {
+      font-size: 17px;
+      padding: 11px 30px;
+    }
+  }
+</style>
+</head>
+<body>
+
+<div class="carousel-wrapper">
+  <div class="carousel-container">
+    <div class="gallery" id="carousel">
+      <span style="--i:0"><img src="images/cairncross-2a.jpg" alt="Computers" /><div class="name-tag">Mr Cairncross<br/>Principle</div></span>
+      <span style="--i:1"><img src="images/cairncross-2a.jpg" alt="Music" /><div class="name-tag">Rohini Boggenpoel<br/> Grade R</div></span>
+      <span style="--i:2"><img src="images/cairncross-2a.jpg" alt="Chess" /><div class="name-tag"><br/> Grade R</div></span>
+      <span style="--i:3"><img src="images/cairncross-2a.jpg" alt="Hockey" /><div class="name-tag">Maleehah Limbada<br/> Grade R Assistant</div></span>
+      <span style="--i:4"><img src="images/cairncross-2a.jpg" alt="Soccer" /><div class="name-tag">Olivia Lentjies<br/> Grade 1</div></span>
+      <span style="--i:5"><img src="images/cairncross-2a.jpg" alt="Tennis" /><div class="name-tag">Renee Steyn<br/> Grade 2</div></span>
+      <span style="--i:6"><img src="images/cairncross-2a.jpg" alt="Ballet" /><div class="name-tag">Mary White<br/> Grade 3</div></span>
+      <span style="--i:7"><img src="images/cairncross-2a.jpg" alt="Judo" /><div class="name-tag">Bernadette Bonnesse<br/> Grade 4</div></span>
+      <span style="--i:7"><img src="images/cairncross-2a.jpg" alt="Judo" /><div class="name-tag">Amanda Schoeman<br/> Grade 5</div></span>
+      <span style="--i:7"><img src="images/cairncross-2a.jpg" alt="Judo" /><div class="name-tag">Kathy Seaborne<br/> Grade 6</div></span>
+      <span style="--i:7"><img src="images/cairncross-2a.jpg" alt="Judo" /><div class="name-tag">Robert Welcome<br/> Grade 7</div></span>
+      <span style="--i:7"><img src="images/cairncross-2a.jpg" alt="Judo" /><div class="name-tag">Rockshaan Young<br/> Utilty Teacher</div></span>
+      <span style="--i:7"><img src="images/cairncross-2a.jpg" alt="Judo" /><div class="name-tag">Dartagnian Petrus<br/> Utilty Teacher</div></span>
+      <span style="--i:7"><img src="images/cairncross-2a.jpg" alt="Judo" /><div class="name-tag">Leila Limbada<br/> Secretary</div></span>
+      <span style="--i:7"><img src="images/cairncross-2a.jpg" alt="Judo" /><div class="name-tag">Janice<br/> Bursar</div></span>
+      <span style="--i:7"><img src="images/cairncross-2a.jpg" alt="Judo" /><div class="name-tag">Charmelle Human<br/> Admin assistant</div></span>
+      <span style="--i:7"><img src="images/cairncross-2a.jpg" alt="Judo" /><div class="name-tag">Harriet Mdungwana<br/> Grade 4</div></span>
+      <span style="--i:7"><img src="images/cairncross-2a.jpg" alt="Judo" /><div class="name-tag">Melon Valentine<br/> Support Staff</div></span>
+      <span style="--i:7"><img src="images/cairncross-2a.jpg" alt="Judo" /><div class="name-tag">Riccardo Kasper<br/> Support Staff</div></span>
+    </div>
+  </div>
+</div>
+
+<div class="controls">
+  <button onclick="rotateCarousel(-1)">⟲ Rotate Left</button>
+  <button onclick="rotateCarousel(1)">⟳ Rotate Right</button>
+</div>
+
+<script>
+  const carousel = document.getElementById("carousel");
+  let angle = 0;
+
+  function rotateCarousel(step) {
+    angle += step * 45;
+    carousel.style.transform = `rotateY(${angle}deg)`;
+  }
+</script>
+
+</body>
+</html>

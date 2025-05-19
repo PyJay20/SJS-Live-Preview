@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en-ZA">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Parent Resources | St Joseph’s</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      background: #f9f9f9;
+      color: #333;
+    }
+
+    header {
+      background: #82c419;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+      position: relative;
+    }
+
+    header .home-btn {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      background: white;
+      color: #82c419;
+      padding: 10px 15px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    header .home-btn:hover {
+      background: #f0f0f0;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+
+    .section {
+      margin-bottom: 40px;
+    }
+
+    .section h2 {
+      border-left: 5px solid #82c419;
+      padding-left: 10px;
+      font-size: 1.5em;
+      margin-bottom: 15px;
+    }
+
+    .resources ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .resources li {
+      margin: 10px 0;
+    }
+
+    .resources a {
+      color: #003366;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .resources a:hover {
+      text-decoration: underline;
+    }
+
+    .faq summary {
+      cursor: pointer;
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+
+    .contact-box {
+      background: #eef2f5;
+      padding: 20px;
+      border-left: 5px solid #82c419;
+      border-radius: 5px;
+    }
+
+    /* info section */
+.info_section {
+  background-color: #252525;
+  color: #ffffff;
+}
+
+.info_section h5 {
+  margin-bottom: 20px;
+}
+
+.info_section .info_contact .contact_link_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flexbox;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.info_section .info_contact .contact_link_box a {
+  margin: 5px 0;
+  color: #ffffff;
+}
+
+.info_section .info_contact .contact_link_box a i {
+  margin-right: 5px;
+}
+
+.info_section .info_contact .contact_link_box a:hover {
+  color: #82c419;
+}
+
+.info_section .info_social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 20px;
+}
+
+.info_section .info_social a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #ffffff;
+  width: 30px;
+  height: 30px;
+  background-color: #ffffff;
+  color: #252525;
+  border-radius: 100%;
+  margin-right: 5px;
+}
+
+.info_section .info_social a:hover {
+  color: #82c419;
+}
+
+.info_section .info_links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.info_section .info_links a {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 15px;
+  color: #ffffff;
+}
+
+.info_section .info_links a i {
+  margin-right: 5px;
+}
+
+.info_section .info_links a:hover, .info_section .info_links a.active {
+  color: #82c419;
+}
+
+.info_section form input {
+  border: 1px solid #82c419;
+  background-color: transparent;
+  width: 100%;
+  height: 45px;
+  padding-left: 15px;
+  color: #ffffff;
+  outline: none;
+}
+
+.info_section form input::-webkit-input-placeholder {
+  color: #ffffff;
+}
+
+.info_section form input:-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.info_section form input::-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.info_section form input::placeholder {
+  color: #ffffff;
+}
+
+.info_section form button {
+  display: inline-block;
+  background-color: #82c419;
+  color: #ffffff;
+  padding: 10px 55px;
+  border-radius: 0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  border: none;
+  margin-top: 15px;
+}
+
+.info_section form button:hover {
+  background-color: #9dfa09;
+}
+
+/* end info section */
+
+    footer {
+      text-align: center;
+      padding: 30px 20px 10px;
+      background: #82c419;
+      font-size: 0.9em;
+    }
+
+    .footer-nav {
+      margin-bottom: 10px;
+    }
+
+    .footer-nav a {
+      margin: 0 10px;
+      color: #000000;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .footer-nav a:hover {
+      text-decoration: underline;
+      background-color: #1245b3;
+    }
+
+/* info section */
+.info_section {
+  background-color: #252525;
+  color: #ffffff;
+}
+
+.info_section h5 {
+  margin-bottom: 20px;
+}
+
+.info_section .info_contact .contact_link_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flexbox;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.info_section .info_contact .contact_link_box a {
+  margin: 5px 0;
+  color: #ffffff;
+}
+
+.info_section .info_contact .contact_link_box a i {
+  margin-right: 5px;
+}
+
+.info_section .info_contact .contact_link_box a:hover {
+  color: #82c419;
+}
+
+.info_section .info_social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 20px;
+}
+
+.info_section .info_social a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #ffffff;
+  width: 30px;
+  height: 30px;
+  background-color: #ffffff;
+  color: #252525;
+  border-radius: 100%;
+  margin-right: 5px;
+}
+
+.info_section .info_social a:hover {
+  color: #82c419;
+}
+
+.info_section .info_links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.info_section .info_links a {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 15px;
+  color: #ffffff;
+}
+
+.info_section .info_links a i {
+  margin-right: 5px;
+}
+
+.info_section .info_links a:hover, .info_section .info_links a.active {
+  color: #82c419;
+}
+
+    /* footer section*/
+.footer_section {
+  background-color: #ffffff;
+  text-align: center;
+  color: #000000;
+  font-size: 21px;
+}
+
+.footer_section:hover {
+background-color: #82c419;
+}
+
+.footer_section p {
+  margin: 0;
+  padding: 20px 0;
+  color: #172404b9;
+}
+
+.footer_section p a {
+  color: inherit;
+}
+  </style>
+</head>
+
+
+<body>
+
+<header>
+  <a href="index.html" class="home-btn">🏠 Home</a>
+  <h1>Parent Resources</h1>
+  <p>Your hub for school updates, forms, and helpful info</p>
+</header>
+
+<div class="container">
+
+  <div class="section resources">
+    <h2>📄 Downloadable Forms &amp; Documents</h2>
+    
+      <li><a href="/home/jomama/Desktop/SJSfinalwebsite2/documents/ADMISSION-FORM-2025-and-2026.pdf">ADMISSION-FORM-2025-and-2026</a></li>
+      <li><a href="/home/jomama/Desktop/SJSfinalwebsite2/documents/FEES-LETTER-2025.pdf">School Fees Pdf</a></li>
+      <li><a href="/home/jomama/Desktop/SJSfinalwebsite2/documents/LtrParentsTERM1-FAMILY-DAY-2025.pdf">TERM1-Parents Letter-Family Day-2025</a></li>
+      <li><a href="/home/jomama/Desktop/SJSfinalwebsite2/documents/LtrParentsTERM1-ELECTION-DAY.pdf">TERM1-Parents Letter-Election Day-2025</a></li>
+      <li><a href="/home/jomama/Desktop/SJSfinalwebsite2/documents/LtrParentsTERM-2-TERM-2-PLANNER.pdf">TERM2-Parents Letter-Term Planner-2025</a></li>
+      <li><a href="/home/jomama/Desktop/SJSfinalwebsite2/documents/LtrParentsTERM2-SPORT-TIMETABLE-TERM-2-2025.pdf">TERM2-Parents Letter-Sports Timetable-2025</a></li>
+      <li><a href="/home/jomama/Desktop/SJSfinalwebsite2/documents/Requirements-Gr-R-2025.pdf">Requirements-Grade R-2025</a></li>
+      <li><a href="/home/jomama/Desktop/SJSfinalwebsite2/documents/Requirements-Gr-0-2025.pdf">Requirements-Grade 0-2025</a></li>
+      <li><a href="/home/jomama/Desktop/SJSfinalwebsite2/documents/Requirements-Gr-1-2025.pdf">Requirements-Grade 1-2025</a></li>
+      <li><a href="/home/jomama/Desktop/SJSfinalwebsite2/documents/Requirements-Gr-2-2025.pdf">Requirements-Grade 2-2025</a></li>
+      <li><a href="/home/jomama/Desktop/SJSfinalwebsite2/documents/Requirements-Gr-3-2025.pdf">Requirements-Grade 3-2025</a></li>
+      <li><a href="/home/jomama/Desktop/SJSfinalwebsite2/documents/Requirements-Gr-4-2025.pdf">Requirements-Grade 4-2025</a></li>
+      <li><a href="/home/jomama/Desktop/SJSfinalwebsite2/documents/Requirements-Gr-5-2025.pdf">Requirements-Grade 5-2025</a></li>
+      <li><a href="/home/jomama/Desktop/SJSfinalwebsite2/documents/Requirements-Gr-6-2025.pdf">Requirements-Grade 6-2025</a></li>
+      <li><a href="/home/jomama/Desktop/SJSfinalwebsite2/documents/School-History-2022.pdf">School History-Pdf</a></li>
+      <li><a href="#">Aftercare Registration Form</a></li>
+      <hr/>
+    
+  </div>
+
+  <div class="section faq">
+    <h2>❓ Frequently Asked Questions</h2>
+    <details>
+      <summary>What time does school start?</summary>
+      <p>School starts promptly at 7:50 AM. Gates open at 7:00 AM.</p>
+    </details>
+    <details>
+      <summary>How do I notify the school of an absence?</summary>
+      <p>You may call the office, before 8:30 AM, or as soon as possible, if an emergency issue.</p>
+    </details>
+    <details>
+      <summary>Where can I buy uniforms?</summary>
+      <p>Uniforms are available from our ever helpful staff-member: Charmelle Human, who can be found at the school office's.</p>
+    </details>
+  </div>
+  <hr/>
+  <div class="section contact-box">
+    <h2>📬 Contact Us</h2>
+    <p><strong>School Office:</strong> (041) 360 8283</p>
+    <p><strong>School Office-Operating Hours:</strong> Mon–Fri, 7:30 AM – 3:00 PM</p>
+  </div>
+
+</div>
+
+<!-- Nav-bottom section -->
+
+<section class="info_section layout_padding2">
+  <div class="container">
+      <div class="col-md-4">
+        <div class="info_link_box">
+          <h5>
+            Navigation
+          </h5>
+          <div class="info_links">
+            <a class="" href="index.html"> <i class="fa fa-angle-right" aria-hidden="true"></i> Home </a>
+            <a class="" href="calendar.html"> <i class="fa fa-angle-right" aria-hidden="true"></i> School Calendar </a>
+            <a class="" href="our_school.html"> <i class="fa fa-angle-right" aria-hidden="true"></i> Our School </a>
+            <a class="" href="extra-mural.html"> <i class="fa fa-angle-right" aria-hidden="true"></i> Extra Mural </a>
+            <a class="" href="about History.html"> <i class="fa fa-angle-right" aria-hidden="true"></i> About Us</a>
+            <a class="" href="photo-gallery.html"> <i class="fa fa-angle-right" aria-hidden="true"></i>Photo Gallery </a>
+            <a class="active" href="#"> <i class="fa fa-angle-right" aria-hidden="true"></i>Parent Resources </a>
+            <a class="" href="team.html"> <i class="fa fa-angle-right" aria-hidden="true"></i> Our Team</a>
+            <a class="" href="contact.html"> <i class="fa fa-angle-right" aria-hidden="true"></i> Contact Us</a>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+
+<!-- end Nav-bottom section -->
+<!-- footer section -->
+<footer class="footer_section container-fluid">
+  <p>
+    St Joseph’s R.C. School&copy; <span id="displayYear"></span> All Rights Reserved. <br> 
+    <a href="https://OmniGenix.co.za"> Design by: OmniGenix&copy;</a>
+  </p>
+</footer>
+<!-- footer section -->
+
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script src="js/custom.js"></script>
+<script>
+  function openNav() {
+    document.getElementById("myNav").style.width = "100%";
+  }
+
+  function closeNav() {
+    document.getElementById("myNav").style.width = "0";
+  }
+</script>
+</body>
+
+</html>

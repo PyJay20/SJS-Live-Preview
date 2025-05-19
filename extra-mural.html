@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Extra-Mural Activities | St. Joseph’s R.C. School</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    /* info section */
+.info_section {
+  background-color: #252525;
+  color: #ffffff;
+}
+
+.info_section h5 {
+  margin-bottom: 20px;
+}
+
+.info_section .info_contact .contact_link_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flexbox;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.info_section .info_contact .contact_link_box a {
+  margin: 5px 0;
+  color: #ffffff;
+}
+
+.info_section .info_contact .contact_link_box a i {
+  margin-right: 5px;
+}
+
+.info_section .info_contact .contact_link_box a:hover {
+  color: #82c419;
+}
+
+.info_section .info_social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 20px;
+}
+
+.info_section .info_social a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #ffffff;
+  width: 30px;
+  height: 30px;
+  background-color: #ffffff;
+  color: #252525;
+  border-radius: 100%;
+  margin-right: 5px;
+}
+
+.info_section .info_social a:hover {
+  color: #82c419;
+}
+
+.info_section .info_links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.info_section .info_links a {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 15px;
+  color: #ffffff;
+}
+
+.info_section .info_links a i {
+  margin-right: 5px;
+}
+
+.info_section .info_links a:hover, .info_section .info_links a.active {
+  color: #82c419;
+}
+
+
+/* end info section */
+/* footer section*/
+.footer_section {
+  background-color: #fdfdfe;
+  text-align: center;
+  color: #000000;
+  font-size: 21px;
+}
+
+.footer_section:hover {
+background-color: #82c419;
+}
+
+.footer_section p {
+  margin: 0;
+  padding: 20px 0;
+  color: #172404b9;
+}
+
+.footer_section p a {
+  color: inherit;
+}
+
+
+  </style>
+</head>
+<body class="font-sans text-gray-800">
+
+  <!-- Header -->
+
+  
+    <head>
+      <!-- Basic -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <!-- Mobile Metas -->
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <!-- Site Metas -->
+      <meta name="keywords" content="">
+      <meta name="description" content="">
+      <meta name="author" content="">
+  
+      <title>(MOCK) St. Joseph's R.C School</title>
+  
+      <!--owl slider stylesheet -->
+      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  
+      <!-- bootstrap core css -->
+      <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+      <!-- fonts awesome style -->
+      <link href="css/font-awesome.min.css" rel="stylesheet">
+      <!-- fonts style -->
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:400,500,700&amp;display=swap" rel="stylesheet">
+  
+      <!-- Custom styles for this template -->
+      <link href="css/style.css" rel="stylesheet">
+      <!-- responsive style -->
+      <link href="css/responsive.css" rel="stylesheet">
+    </head>
+  
+    <body>
+      <!-- header section starts -->
+      <div class="hero_area">
+        <header class="header_section">
+          <div class="contact_nav_container">
+            <div class="container">
+              <div class="contact_nav">
+                <a href="#">
+                  <i class="fa fa-phone" aria-hidden="true"></i>
+                  <span>
+                    Phone Call : 041 360 8283
+                  </span>
+                </a>
+                <a href="#">
+                  <i class="fa fa-map-marker" aria-hidden="true"></i>
+                  <span>
+                    Address : 536 Cape Rd, Kabega Park, Port Elizabeth, 6025
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg custom_nav-container">
+              <div class="custom_menu-btn">
+                <button onclick="openNav()">
+                  <span class="s-1"> </span>
+                  <span class="s-2"> </span>
+                  <span class="s-3"> </span>
+                </button>
+              </div>
+              <div id="myNav" class="overlay">
+                <div class="menu_btn-style ">
+                  <button onclick="closeNav()">
+                    <span class="s-1"> </span>
+                    <span class="s-2"> </span>
+                    <span class="s-3"> </span>
+                  </button>
+                </div>
+                <div class="overlay-content">
+                  <a class="" href="index.html"> <i class="fa fa-angle-right" aria-hidden="true"></i> Home </a>
+                  <a class="" href="calendar.html"> <i class="fa fa-angle-right" aria-hidden="true"></i> School Calendar </a>
+                  <a class="" href="our_school.html"> <i class="fa fa-angle-right" aria-hidden="true"></i> Our School </a>
+                  <a class="active" href="extra-mural.html"> <i class="fa fa-angle-right" aria-hidden="true"></i> Extra Mural </a>
+                  <a class="" href="about History.html"> <i class="fa fa-angle-right" aria-hidden="true"></i> About Us</a>
+                  <a class="" href="photo-gallery.html"> <i class="fa fa-angle-right" aria-hidden="true"></i>Photo Gallery </a>
+                  <a class="" href="parent-resources.html"> <i class="fa fa-angle-right" aria-hidden="true"></i>Parent Resources </a>
+                  <a class="" href="team.html"> <i class="fa fa-angle-right" aria-hidden="true"></i> Our Team</a>
+                  <a class="" href="contact.html"> <i class="fa fa-angle-right" aria-hidden="true"></i> Contact Us</a>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </header>
+  
+      <!-- end header section -->
+      <header class="bg-gradient-to-r from-[#82c419] to-[#b9e65d] text-white py-20 text-center">
+        <div class="max-w-4xl mx-auto px-6">
+          <h1 class="text-5xl font-bold mb-3">Extra-Mural Activities</h1>
+          <p class="text-lg">Empowering students beyond the classroom with sports, arts, and personal development.</p>
+        </div>
+      </header>
+
+  <!-- Sports Section -->
+  <section class="bg-gray-100 py-16">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="text-3xl font-semibold text-center mb-12">🏅 Sports & Physical Activities</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+
+        <!-- Soccer -->
+        <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition">
+          <div class="text-5xl mb-3">⚽</div>
+          <h3 class="text-xl font-bold mb-2">Soccer</h3>
+          <p>Teamwork and skill-building through friendly competition and league play.</p>
+        </div>
+
+        <!-- Hockey -->
+        <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition">
+          <div class="text-5xl mb-3">🏑</div>
+          <h3 class="text-xl font-bold mb-2">Hockey</h3>
+          <p>Developing coordination, agility, and sportsmanship on the field.</p>
+        </div>
+
+        <!-- Tennis -->
+        <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition">
+          <div class="text-5xl mb-3">🎾</div>
+          <h3 class="text-xl font-bold mb-2">Tennis</h3>
+          <p>Sharpening reflexes and technique with professional coaching and drills.</p>
+        </div>
+
+        <!-- Judo -->
+        <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition">
+          <div class="text-5xl mb-3">🥋</div>
+          <h3 class="text-xl font-bold mb-2">Judo</h3>
+          <p>Discipline and self-defense through the art of movement and respect.</p>
+        </div>
+
+        <!-- Ballet -->
+        <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition">
+          <div class="text-5xl mb-3">🩰</div>
+          <h3 class="text-xl font-bold mb-2">Ballet</h3>
+          <p>Elegance, posture, and rhythm taught by experienced dance instructors.</p>
+        </div>
+
+        <!-- Cricket -->
+        <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition">
+          <div class="text-5xl mb-3">🏏</div>
+          <h3 class="text-xl font-bold mb-2">Cricket</h3>
+          <p>Strategic thinking and sportsmanship come together on the pitch.</p>
+        </div>
+
+        <!-- Ball Skills -->
+        <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition">
+          <div class="text-5xl mb-3">🏐</div>
+          <h3 class="text-xl font-bold mb-2">Ball Skills</h3>
+          <p>For our younger learners – hand-eye coordination through play-based activities.</p>
+        </div>
+
+        <!-- Fun & Fitness -->
+        <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition">
+          <div class="text-5xl mb-3">🤸</div>
+          <h3 class="text-xl font-bold mb-2">Fun & Fitness</h3>
+          <p>A fun way to get active and stay healthy with movement games and obstacle courses.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Clubs & Development -->
+  <section class="bg-white py-16">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="text-3xl font-semibold text-center mb-12">🎓 Clubs & Personal Development</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+
+        <!-- Computers -->
+        <div class="bg-gray-50 rounded-xl shadow-lg p-6 hover:shadow-xl transition">
+          <div class="text-5xl mb-3">💻</div>
+          <h3 class="text-xl font-bold mb-2">Computers</h3>
+          <p>Foundations in typing, coding, and digital literacy in a modern lab setting.</p>
+        </div>
+
+        <!-- Music -->
+        <div class="bg-gray-50 rounded-xl shadow-lg p-6 hover:shadow-xl transition">
+          <div class="text-5xl mb-3">🎼</div>
+          <h3 class="text-xl font-bold mb-2">Music</h3>
+          <p>Creative expression through song, instruments, and choir performances.</p>
+        </div>
+
+        <!-- Chess -->
+        <div class="bg-gray-50 rounded-xl shadow-lg p-6 hover:shadow-xl transition">
+          <div class="text-5xl mb-3">♟️</div>
+          <h3 class="text-xl font-bold mb-2">Chess Club</h3>
+          <p>Logical thinking and strategic play in a calm, focused environment.</p>
+        </div>
+
+        <!-- Art -->
+        <div class="bg-gray-50 rounded-xl shadow-lg p-6 hover:shadow-xl transition">
+          <div class="text-5xl mb-3">🎨</div>
+          <h3 class="text-xl font-bold mb-2">Art Club</h3>
+          <p>Painting, drawing, and creative projects to spark young imaginations.</p>
+        </div>
+
+        <!-- 1st Holy Communion -->
+        <div class="bg-gray-50 rounded-xl shadow-lg p-6 hover:shadow-xl transition">
+          <div class="text-5xl mb-3">🙏</div>
+          <h3 class="text-xl font-bold mb-2">1st Holy Communion</h3>
+          <p>Faith formation and preparation for a special milestone in the Catholic journey.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Nav-bottom section -->
+
+<section class="info_section layout_padding2">
+  <div class="container">
+      <div class="col-md-4">
+        <div class="info_link_box">
+          <h5>
+            Navigation
+          </h5>
+          <div class="info_links">
+            <!-- Nav-bottom section -->
+
+<section class="info_section layout_padding2">
+  <div class="container">
+      <div class="col-md-4">
+        <div class="info_link_box">
+          <h5>
+            Navigation
+          </h5>
+          <div class="info_links">
+            <a class="" href="index.html"> <i class="fa fa-angle-right" aria-hidden="true"></i> Home </a>
+                <a class="" href="calendar.html"> <i class="fa fa-angle-right" aria-hidden="true"></i> School Calendar </a>
+                <a class="" href="our_school.html"> <i class="fa fa-angle-right" aria-hidden="true"></i> Our School </a>
+                <a class="active" href="extra-mural.html"> <i class="fa fa-angle-right" aria-hidden="true"></i> Extra Mural </a>
+                <a class="" href="about History.html"> <i class="fa fa-angle-right" aria-hidden="true"></i> About Us</a>
+                <a class="" href="photo-gallery.html"> <i class="fa fa-angle-right" aria-hidden="true"></i>Photo Gallery </a>
+                <a class="" href="parent-resources.html"> <i class="fa fa-angle-right" aria-hidden="true"></i>Parent Resources </a>
+                <a class="" href="team.html"> <i class="fa fa-angle-right" aria-hidden="true"></i> Our Team</a>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+
+<!-- end Nav-bottom section -->
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+
+<!-- end Nav-bottom section -->
+<!-- footer section -->
+<footer class="footer_section container-fluid">
+  <p>
+    St Joseph’s R.C. School&copy; <span id="displayYear"></span> All Rights Reserved. <br> 
+    <a href="https://OmniGenix.co.za"> Design by: OmniGenix&copy;</a>
+  </p>
+</footer>
+<!-- footer section -->
+
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script src="js/custom.js"></script>
+<script>
+  function openNav() {
+    document.getElementById("myNav").style.width = "100%";
+  }
+
+  function closeNav() {
+    document.getElementById("myNav").style.width = "0";
+  }
+</script>
+</body>
+
+</html>
