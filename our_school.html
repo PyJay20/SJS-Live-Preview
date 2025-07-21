@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Life at St Joseph’s</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <link href="css/style.css" rel="stylesheet" />
+
+  <style>
+    body {
+      background-color: #f9f9f9;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    header {
+      background-color: #007bff;
+      color: white;
+      text-align: center;
+      padding: 0rem 1rem;
+    }
+
+    h1, h2, h3 {
+      font-weight: 700;
+    }
+
+    .masonry {
+      column-count: 4;
+      column-gap: 1rem;
+      padding: 1rem;
+    }
+
+    @media (max-width: 992px) {
+      .masonry {
+        column-count: 2;
+      }
+    }
+
+    @media (max-width: 576px) {
+      .masonry {
+        column-count: 1;
+      }
+    }
+
+    .masonry-item {
+      break-inside: avoid;
+      margin-bottom: 1rem;
+      width: 100%;
+    }
+
+    .masonry-item img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      display: block;
+      border-radius: 0.5rem;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .masonry-item img:hover {
+      transform: scale(1.03);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    footer {
+      padding: 20px 0;
+      background-color: #f8f9fa;
+      text-align: center;
+      font-size: 14px;
+    }
+  </style>
+  <!-- header section starts -->
+  <div class="hero_area">
+    <header class="header_section">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container">
+          <div class="custom_menu-btn">
+            <button onclick="openNav()">
+              <span class="s-1"> </span>
+              <span class="s-2"> </span>
+              <span class="s-3"> </span>
+            </button>
+          </div>
+          <div id="myNav" class="overlay">
+            <div class="menu_btn-style ">
+              <button onclick="closeNav()">
+                <span class="s-1"> </span>
+                <span class="s-2"> </span>
+                <span class="s-3"> </span>
+              </button>
+            </div>
+            <div class="overlay-content">
+              <a class="" href="index"> <i class="fa fa-angle-right" aria-hidden="true"></i> Home </a>
+              <a class="" href="calendar.html"> <i class="fa fa-angle-right" aria-hidden="true"></i> School Calendar </a>
+              <a class="active" href="our_school.html"> <i class="fa fa-angle-right" aria-hidden="true"></i> Life at St Joseph’s </a>
+              <a class="" href="extra-mural.html"> <i class="fa fa-angle-right" aria-hidden="true"></i> Extra Mural </a>
+              <a class="" href="about History.html"> <i class="fa fa-angle-right" aria-hidden="true"></i> About Us</a>
+              <a class="" href="photo-gallery.html"> <i class="fa fa-angle-right" aria-hidden="true"></i>Photo Gallery </a>
+              <a class="" href="parent-resources.html"> <i class="fa fa-angle-right" aria-hidden="true"></i>Parent Resources </a>
+              <a class="" href="team.html"> <i class="fa fa-angle-right" aria-hidden="true"></i> Our Team</a>
+              <a class="" href="contact.html"> <i class="fa fa-angle-right" aria-hidden="true"></i> Contact Us</a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+  <!-- end header section -->
+</head>
+<body>
+  
+
+  <header>
+    <div class="container">
+      <h1 class="display-5">Life at St Joseph’s</h1>
+      <p class="lead">A glimpse into the fun, learning, and growth of our vibrant school community</p>
+    </div>
+  </header>
+
+  <section class="text-center py-4">
+    <h2 class="fw-bold text-uppercase text-primary">Annual Highlights</h2>
+    <p class="text-muted fs-5 mx-auto" style="max-width: 800px;">
+      Every year, St Joseph's R.C. School celebrates a variety of enriching events including our <strong>Welcome Day</strong> athletics, 
+      <strong>green initiatives</strong> like recycling and planting ceremonies, and our much-loved <strong>annual concerts</strong>. 
+      Here are some special moments from our vibrant school life.
+    </p>
+  </section>
+
+  <section class="masonry">
+    <div class="masonry-item">
+      <img src="images/2025_athletics_day/486267104_1206836941147176_964312054944259303_n.jpg" alt="Athletics Day">
+    </div>
+    <div class="masonry-item">
+      <img src="images/2024_welcome_picnic/481894591_1192619939235543_772675632307164778_n.jpg" alt="Family Morning 2024">
+    </div>
+    <div class="masonry-item">
+      <img src="images/2025_planting_ceremony/492886184_1230593568771513_5066389673772854329_n.jpg" alt="Planting Ceremony">
+    </div>
+    <div class="masonry-item">
+      <img src="images/2025_character_dress-up/493322593_1230519995445537_4022242838999397833_n.jpg" alt="Character Dress-Up">
+    </div>
+    <!-- Add more images as needed -->
+  </section>
+
+      <!-- Nav-bottom section -->
+
+<section class="info_section layout_padding2">
+  <div class="container">
+      <div class="col-md-4">
+        <div class="info_link_box">
+          <h5>
+            Navigation
+          </h5>
+          <div class="info_links">
+            <a class="active" href="#"> <i class="fa fa-angle-right" aria-hidden="true"></i> Home </a>
+                <a class="" href="calendar.html"> <i class="fa fa-angle-right" aria-hidden="true"></i> School Calendar </a>
+                <a class="" href="our_school.html"> <i class="fa fa-angle-right" aria-hidden="true"></i> Life at St Joseph’s </a>
+                <a class="" href="extra-mural.html"> <i class="fa fa-angle-right" aria-hidden="true"></i> Extra Mural </a>
+                <a class="" href="about_history.html"> <i class="fa fa-angle-right" aria-hidden="true"></i> About Us</a>
+                <a class="" href="photo-gallery.html"> <i class="fa fa-angle-right" aria-hidden="true"></i>Photo Gallery </a>
+                <a class="" href="parent-resources.html"> <i class="fa fa-angle-right" aria-hidden="true"></i>Parent Resources </a>
+                <a class="" href="team.html"> <i class="fa fa-angle-right" aria-hidden="true"></i> Our Team</a>
+                <a class="" href="contact.html"> <i class="fa fa-angle-right" aria-hidden="true"></i> Contact Us</a>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+
+<!-- end Nav-bottom section -->
+<!-- footer section -->
+<footer class="footer_section container-fluid">
+  <p>
+    St Joseph’s R.C. School&copy; <span id="displayYear"></span> All Rights Reserved. <br> 
+    <a href="https://OmniGenix.co.za"> Design by: OmniGenix&copy;</a>
+  </p>
+</footer>
+<!-- footer section -->
+
+  <!-- Bootstrap JS and AOS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+    document.getElementById("displayYear").textContent = new Date().getFullYear();
+  </script>
+  <script>
+    function openNav() {
+      document.getElementById("myNav").style.width = "100%";
+    }
+  
+    function closeNav() {
+      document.getElementById("myNav").style.width = "0";
+    }
+  </script>
+
+</body>
+</html>

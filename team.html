@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Our Staff - St Joseph’s R.C. School</title>
+<style>
+  html, body {
+    overflow-x: hidden;   /* prevent horizontal scrollbar */
+    overflow-y: hidden;   /* prevent vertical scrollbar */
+    width: 100vw;
+    height: 100%;
+    margin: 0; padding: 0;
+    background: #010101;
+    color: #eee;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  body {
+  overflow-x: hidden;
+  /* REMOVE THIS LINE 👇 */
+  /* overflow-y: hidden; */
+  width: 100vw;
+  min-height: 100vh; /* So content can grow vertically */
+  margin: 0; padding: 0;
+  background: #010101;
+  color: #eee;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.home-button {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  background: linear-gradient(to right, #82c419, #a3dc3e);
+  color: #010101;
+  padding: 10px 24px;
+  border-radius: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  z-index: 2000;
+  transition: background 0.3s ease;
+}
+
+.home-button:hover {
+  background: linear-gradient(to right, #a3dc3e, #82c419);
+}
+
+  .carousel-wrapper {
+    width: 100vw;
+    overflow-x: hidden;     /* hide horizontal scrollbar */
+    display: flex;
+    justify-content: center; /* center horizontally */
+    padding-top: 90px;
+  }
+
+  .carousel-container {
+  perspective: 1200px;
+  width: 90vw;
+  max-width: 500px;
+  height: 360px;
+  margin-top: 120px;  /* <-- important */
+  position: relative;
+  overflow: visible;
+}
+
+  .gallery {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform-style: preserve-3d;
+    transition: transform 1s ease;
+  }
+
+  .gallery span {
+  width: 220px;
+  height: auto;
+  position: absolute;
+  transform-style: preserve-3d;
+  left: calc(50% - 110px);
+  text-align: center;
+}
+
+.img-wrapper {
+  position: relative;
+  width: 100%;
+  height: 220px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(130,196,25,0.7);
+  background: #1b1b1b;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 12px;
+}
+
+.name-tag {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #82c419;
+  color: #010101;
+  font-weight: 700;
+  border-radius: 9999px;
+  padding: 6px 20px;
+  font-size: 15px;
+  box-shadow: 0 2px 6px rgba(0 0 0 / 0.5);
+  user-select: none;
+  white-space: nowrap;
+  z-index: 10;
+}
+
+  .controls {
+    position: fixed;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    margin-top: 100px;
+    gap: 36px;
+    background: #111;
+    padding: 12px 60px;
+    border-radius: 30px;
+    box-shadow: 0 0 18px rgba(130,196,25,0.85);
+    user-select: none;
+    z-index: 1000;
+  }
+
+  button {
+    background: linear-gradient(to right, #82c419, #a3dc3e);
+    border: none;
+    color: #010101;
+    font-weight: 700;
+    font-size: 18px;
+    padding: 12px 36px;
+    border-radius: 18px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0 0 0 / 0.45);
+    transition: background 0.3s ease;
+  }
+
+  button:hover {
+    background: linear-gradient(to right, #a3dc3e, #82c419);
+  }
+
+  /* Responsive tweaks */
+  @media (max-width: 480px) {
+  .carousel-container {
+    height: 320px;
+    margin-top: 150px;
+  }
+
+  .gallery span {
+    width: 180px;
+    height: 180px;
+    left: calc(50% - 90px);
+    transform: rotateY(calc(var(--i) * 45deg)) translateZ(450px);
+  }
+
+  .name-tag {
+    font-size: 13px;
+    padding: 5px 16px;
+    margin-top: -4px; /* ✅ Reduce or change this value */
+  }
+
+  button {
+    font-size: 17px;
+    padding: 11px 30px;
+  }
+}
+
+</style>
+</head>
+<body>
+  <a href="index.html" class="home-button">🏠 Home</a>
+<div class="carousel-wrapper">
+  <div class="carousel-container">
+    <div class="gallery" id="carousel">
+      <span><div class="img-wrapper"><img src="images/cairncross-2a.jpg" /><div class="name-tag">Mr Cairncross<br>Principal</div></div></span>
+      <span><div class="img-wrapper"><img src="images/cairncross-2a.jpg" /><div class="name-tag">Rohini Boggenpoel<br> Grade R</div></div></span>
+      <span><div class="img-wrapper"><img src="images/cairncross-2a.jpg" /><div class="name-tag">Maleehah Limbada<br> Grade R Assistant</div></div></span>
+      <span><div class="img-wrapper"><img src="images/cairncross-2a.jpg" /><div class="name-tag">Olivia Lentjies<br> Grade 1</div></div></span>
+      <span><div class="img-wrapper"><img src="images/cairncross-2a.jpg" /><div class="name-tag">Renee Steyn<br> Grade 2</div></div></span>
+      <span><div class="img-wrapper"><img src="images/cairncross-2a.jpg" /><div class="name-tag">Mary White<br> Grade 3</div></div></span>
+      <span><div class="img-wrapper"><img src="images/cairncross-2a.jpg" /><div class="name-tag">Bernadette Bonnesse<br> Grade 4</div></div></span>
+      <span><div class="img-wrapper"><img src="images/cairncross-2a.jpg" /><div class="name-tag">Amanda Schoeman<br> Grade 5</div></div></span>
+      <span><div class="img-wrapper"><img src="images/cairncross-2a.jpg" /><div class="name-tag">Kathy Seaborne<br> Grade 6</div></div></span>
+      <span><div class="img-wrapper"><img src="images/cairncross-2a.jpg" /><div class="name-tag">Robert Welcome<br> Grade 7</div></div></span>
+      <span><div class="img-wrapper"><img src="images/cairncross-2a.jpg" /><div class="name-tag">Dartagnian Petrus<br> Utilty Teacher</div></div></span>
+      <span><div class="img-wrapper"><img src="images/cairncross-2a.jpg" /><div class="name-tag">Rockshaan Young<br> Utilty Teacher</div></div></span>
+      <span><div class="img-wrapper"><img src="images/cairncross-2a.jpg" /><div class="name-tag">Leila Limbada<br> Secretary</div></div></span>
+      <span><div class="img-wrapper"><img src="images/cairncross-2a.jpg" /><div class="name-tag">Jennifer Alvarez<br> Bursar</div></div></span>
+      <span><div class="img-wrapper"><img src="images/cairncross-2a.jpg" /><div class="name-tag">Charmelle Human<br> Admin Assistant</div></div></span>
+      <span><div class="img-wrapper"><img src="images/cairncross-2a.jpg" /><div class="name-tag">Riccardo Kasper<br> Support Staff</div></div></span>
+      <span><div class="img-wrapper"><img src="images/cairncross-2a.jpg" /><div class="name-tag">Melon Valentine<br> Support Staff</div></div></span>
+    </div>
+  </div>
+</div>
+
+<div class="controls">
+  <button onclick="rotateCarousel(-1)">⟲ Previous</button>
+  <button onclick="rotateCarousel(1)">⟳ Next</button>
+</div>
+
+<script>
+  const carousel = document.getElementById("carousel");
+  const items = carousel.querySelectorAll("span");
+  const total = items.length;
+  let angle = 0;
+
+  const degree = 360 / total;
+  const itemWidth = 220; // Match your CSS item width
+  const radius = itemWidth / (2 * Math.tan(Math.PI / total));
+
+  items.forEach((item, i) => {
+    item.style.setProperty('--i', i);
+    item.style.transform = `rotateY(${i * degree}deg) translateZ(${radius}px)`;
+  });
+
+  function rotateCarousel(step) {
+  angle -= step * degree; // Subtract instead of add
+  carousel.style.transform = `rotateY(${angle}deg)`;
+}
+</script>
+
+
+</body>
+</html>
